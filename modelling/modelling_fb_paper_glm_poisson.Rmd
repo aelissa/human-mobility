@@ -1,6 +1,6 @@
 ---
 title: "Regression Modelling Using Facebook Data"
-subtitle: " "
+subtitle: "Poisson Regression"
 author: Francisco Rowe & Alessia Calafiore
 output: html_notebook
 ---
@@ -46,15 +46,6 @@ str(df)
 ```
 
 ## Data Wrangling
-
-Proportion of people moving
-```{r}
-df <- df %>% mutate(
-  mov_prop = n_crisis / start_pop
-) %>% 
-  filter(mov_prop <= 1)
-
-```
 
 Creating area class interaction variable
 ```{r}
